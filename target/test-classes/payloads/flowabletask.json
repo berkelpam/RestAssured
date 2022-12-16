@@ -1,0 +1,40 @@
+{
+  "id": "8",
+  "url": "http://localhost:8182/runtime/tasks/8",
+  "owner": "owner",
+  "assignee": "kermit",
+  "delegationState": "pending",
+  "name": "My task",
+  "description": "Task description",
+  "createTime": "2018-04-17T10:17:43.902+0000",
+  "dueDate": "2018-04-17T10:17:43.902+0000",
+  "priority": 50,
+  "suspended": true,
+  "claimTime": "2018-04-17T10:17:43.902+0000",
+  "taskDefinitionKey": "theTask",
+  "scopeDefinitionId": "12",
+  "scopeId": "14",
+  "subScopeId": "15",
+  "scopeType": "cmmn",
+  "propagatedStageInstanceId": "16",
+  "tenantId": "someTenantId",
+  "category": "ExampleCategory",
+  "formKey": "string",
+  "parentTaskId": "null",
+  "parentTaskUrl": "null",
+  "executionId": "5",
+  "executionUrl": "http://localhost:8182/runtime/executions/5",
+  "processInstanceId": "5",
+  "processInstanceUrl": "http://localhost:8182/runtime/process-instances/5",
+  "processDefinitionId": "oneTaskProcess%3A1%3A4",
+  "processDefinitionUrl": "http://localhost:8182/runtime/process-definitions/oneTaskProcess%3A1%3A4",
+  "variables": [
+    {
+      "name": "myVariable",
+      "type": "string",
+      "value": "test",
+      "valueUrl": "http://....",
+      "scope": "local"
+    }
+  ]
+}
