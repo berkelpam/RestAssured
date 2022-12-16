@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rest-assured-workshop" />
         <module name="RestAssured" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RestAssured" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
