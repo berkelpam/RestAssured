@@ -1,0 +1,130 @@
+{
+  "PublicLightingCustomerRequestHeader": {
+    "RevisionID":"1",
+    "Description": "Aanvraag bijgewerkte openbare verlichting.",
+    "DocumentDate": "2022-12-01",
+    "ContractorReferenceID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+    "FulfillmentTerm": {
+      "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+      "RequestedDeliveryDate": "2022-12-01",
+      "RequestedStartDate": "2022-12-01",
+      "WorkPreparationRequiredIndicator": true
+    },
+    "NetworkOperatorParty": {
+      "ImplementationInspector": {
+        "PersonName": {
+          "FormattedName": "Pablo der Jong"
+        }
+      },
+      "Location": {
+        "FacilityBase": {
+          "ID": "1"
+        }
+      },
+      "RequestHandler": {
+        "PersonName": {
+          "FormattedName": "Pablo de Jong"
+        }
+      }
+    },
+    "OrderReference": {
+      "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+      "PaymentResponsible": "Requestor"
+    },
+    "PartyList": [
+      {
+        "_role": "Customer",
+        "ContactList": [
+          {
+            "EMailAddressCommunication": {
+              "EMailAddressID": "p.dejong@altena.nl"
+            },
+            "PersonName": {
+              "FormattedName": "Pablo de Jong"
+            },
+            "RoleCode": "Contactpersoon",
+            "TelephoneCommunication": {
+              "FormattedNumber": "0612345678"
+            }
+          },
+          {
+            "EMailAddressCommunication": {
+              "EMailAddressID": "bewindvoerder@enexis.nl"
+            },
+            "PersonName": {
+              "FormattedName": "bewindvoerder"
+            },
+            "RoleCode": "Bewindvoerder",
+            "TelephoneCommunication": {
+              "FormattedNumber": "0987654321"
+            }
+          }
+        ],
+        "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+        "Name": "Gemeente Altena"
+      }
+    ],
+    "RequestorReferenceID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+  },
+  "PublicLightingCustomerRequestLineList": [
+    {
+      "Item": {
+        "Annotation": "string",
+        "Asset": {
+          "Description": "string"
+        },
+        "Description": "string",
+        "Location": {
+          "Coordinate": {
+            "LatitudeMeasure": 0,
+            "LongitudeMeasure": 0,
+            "ReferenceSystemID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+          },
+          "LocationDescription": "Parkeerterrein",
+          "NearbyAddress": {
+            "CityName": "Amsterdam",
+            "PostalCode": "1234AB",
+            "StreetName": "Kalverstraat",
+            "BuildingNumber": "12",
+            "BuildingNumberSuffix": "string"
+          }
+        },
+        "TypeOfWork": "Create",
+        "ReconnectDate": "2022-12-01",
+        "SubTypeOfWork": "string"
+      },
+      "PublicLightingCustomerRequestSubLineList": [
+        {
+          "Item": {
+            "Annotation": "string",
+            "Asset": {
+              "Description": "string"
+            },
+            "Description": "string",
+            "Location": {
+              "Coordinate": {
+                "LatitudeMeasure": 0,
+                "LongitudeMeasure": 0,
+                "ReferenceSystemID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+              },
+              "LocationDescription": "Parkeerterrein",
+              "NearbyAddress": {
+                "CityName": "Amsterdam",
+                "PostalCode": "1234AB",
+                "StreetName": "Kalverstraat",
+                "BuildingNumber": "12",
+                "BuildingNumberSuffix": "string"
+              }
+            },
+            "SubTypeOfWork": "ExtraCable",
+            "Quantity": {
+              "content": 5,
+              "_measureUnit": "Meter"
+            },
+            "TypeOfWork": "string"
+          }
+        }
+      ]
+    }
+  ]
+}

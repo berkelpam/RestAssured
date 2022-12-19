@@ -17,16 +17,17 @@ public class RestAssuredRequestsFlowableTask {
     public void createRequestSpecification() {
 
 //        requestSpec = new RequestSpecBuilder().
-                RestAssured.baseURI="http://localhost:9095/flowable-rest/runtime/tasks" ;
+                RestAssured.baseURI="http://localhost:8090/process-api/runtime/tasks" ;
+//            RestAssured.baseURI="http://localhost:8070/public-lighting-customer-requests/v1/requests";
     }
 
     @Test
-    public void postRequest() {
+    public void updateExistingRequest() {
 //         httpRequest = RestAssured.given().auth().basic("postman", "password");
         Response response = given()
                 .auth()
                 .preemptive()
-                .basic("rest-admin", "test")
+                .basic("flowable", "flowable")
                 .header("Content-type", "application/json")
                 .and()
                 .body(jsonDataInFile)
@@ -35,10 +36,8 @@ public class RestAssuredRequestsFlowableTask {
                 .then()
                 .extract().response();
 
-        Assertions.assertEquals(200, response.statusCode());
-        Assertions.assertEquals("test", response.jsonPath().getString("data.name"));
-        Assertions.assertEquals("123", response.jsonPath().getString("data.salary"));
-        Assertions.assertEquals("23", response.jsonPath().getString("data.age"));
-        Assertions.assertEquals("success", response.jsonPath().getString("status"));
+        Assertions.assertEquals(201, response.statusCode());
+        Assertions.assertEquals("Beoordeel wijziging", response.jsonPath().getString("name"));
+
     }
 }

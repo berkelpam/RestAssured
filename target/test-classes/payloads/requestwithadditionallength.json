@@ -1,0 +1,117 @@
+{
+  "PublicLightingCustomerRequestHeader": {
+    "Description": "Aanvraag nieuwe openbare verlichting.",
+    "DocumentDate": "2022-12-01",
+    "ContractorReferenceID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+    "FulfillmentTerm": {
+      "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+      "RequestedDeliveryDate": "2022-12-01",
+      "RequestedStartDate": "2022-12-01",
+      "WorkPreparationRequiredIndicator": true
+    },
+    "NetworkOperatorParty": {
+      "ImplementationInspector": {
+        "PersonName": {
+          "FormattedName": "Inspector Gadget"
+        }
+      },
+      "Location": {
+        "FacilityBase": {
+          "ID": "1"
+        }
+      },
+      "RequestHandler": {
+        "PersonName": {
+          "FormattedName": "Inspector Gadget"
+        }
+      }
+    },
+    "OrderReference": {
+      "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+      "PaymentResponsible": "Requestor"
+    },
+    "PartyList": [
+      {
+        "_role": "Customer",
+        "ContactList": [
+          {
+            "EMailAddressCommunication": {
+              "EMailAddressID": "realiseren-kv-test@enexis.nl"
+            },
+            "PersonName": {
+              "FormattedName": "Conway Contactpersoon"
+            },
+            "RoleCode": "Contactpersoon",
+            "TelephoneCommunication": {
+              "FormattedNumber": "0612345678"
+            }
+          }
+        ],
+        "ID": "bd0594a0-7818-491f-90d8-94b036de8c29",
+        "Name": "Gemeente Eindhoven"
+      }
+    ],
+    "RequestorReferenceID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+  },
+  "PublicLightingCustomerRequestLineList": [
+    {
+      "Item": {
+        "Annotation": "Annotatie Line List",
+        "Asset": {
+          "Description": "Omschrijving lineList"
+        },
+        "Description": "Omschrijving locatie coordinaten",
+        "Location": {
+          "Coordinate": {
+            "LatitudeMeasure": 51.41907,
+            "LongitudeMeasure": 5.36700,
+            "ReferenceSystemID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+          },
+          "LocationDescription": "Parkeerterrein",
+          "NearbyAddress": {
+            "CityName": "Amsterdam",
+            "PostalCode": "1234AB",
+            "StreetName": "Kalverstraat",
+            "BuildingNumber": "12",
+            "BuildingNumberSuffix": ""
+          }
+        },
+        "TypeOfWork": "Create",
+        "ReconnectDate": "2022-12-01",
+        "SubTypeOfWork": "NW"
+      },
+      "PublicLightingCustomerRequestSubLineList": [
+        {
+          "Item": {
+            "Annotation": "Annotatie SubLineList",
+            "Asset": {
+              "Description": "Omschrijving SubLineList"
+            },
+            "Description": "Omschrijfing sublinelist coordinaten",
+            "Location": {
+              "Coordinate": {
+                "LatitudeMeasure": 33.12345,
+                "LongitudeMeasure": 4.123,
+                "ReferenceSystemID": "bd0594a0-7818-491f-90d8-94b036de8c29"
+              },
+              "LocationDescription": "Parkeerterrein",
+              "NearbyAddress": {
+                "CityName": "Amsterdam",
+                "PostalCode": "1234AB",
+                "StreetName": "Kalverstraat",
+                "BuildingNumber": "12",
+                "BuildingNumberSuffix": ""
+              }
+            },
+            "SubTypeOfWork": "ExtraCable",
+            "Quantity": {
+              "content": 5,
+              "_measureUnit": "Meter"
+            },
+            "TypeOfWork": "NW"
+          }
+        }
+      ]
+    }
+  ]
+}
